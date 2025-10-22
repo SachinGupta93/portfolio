@@ -47,49 +47,49 @@ export default function Hero() {
             {/* Left Content */}
             <div className="text-center lg:text-left space-y-12">
               {/* Welcome Badge */}
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl animate-fade-in hover:bg-white/10 hover:backdrop-blur-2xl transition-all duration-300">
+              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl animate-fade-in hover:bg-white/10 hover:backdrop-blur-2xl transition-all duration-300">
                 <div className="flex gap-1">
-                  <Star className="text-yellow-400" size={16} />
-                  <Star className="text-yellow-400" size={16} />
-                  <Star className="text-yellow-400" size={16} />
+                  <Star className="text-yellow-400" size={14} />
+                  <Star className="text-yellow-400" size={14} />
+                  <Star className="text-yellow-400" size={14} />
                 </div>
-                <span className="text-blue-400 font-medium">Welcome to my digital space</span>
+                <span className="text-blue-400 font-medium text-xs sm:text-sm">Welcome to my digital space</span>
               </div>
 
               {/* Main Heading with Typing Effect */}
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
+              <div className="space-y-6 sm:space-y-8">
+                <div className="space-y-3 sm:space-y-4">
+                  <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
                     <span className="block animate-slide-up">Hello, I'm</span>
                     <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent animate-slide-up delay-100">
                     Sachin Gupta
                   </span>
                 </h1>
                   
-                  <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start animate-slide-up delay-200">
-                    <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-                      <span className="text-2xl md:text-3xl text-slate-200 font-semibold">Web Developer</span>
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 justify-center lg:justify-start animate-slide-up delay-200">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                      <span className="text-lg sm:text-2xl md:text-3xl text-slate-200 font-semibold">Web Developer</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-300"></div>
-                      <span className="text-2xl md:text-3xl text-emerald-400 font-semibold">AI Specialist</span>
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-emerald-400 rounded-full animate-pulse delay-300"></div>
+                      <span className="text-lg sm:text-2xl md:text-3xl text-emerald-400 font-semibold">AI Specialist</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Description */}
-              <div className="space-y-6 animate-slide-up delay-300">
-                <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <div className="space-y-4 sm:space-y-6 animate-slide-up delay-300">
+                <p className="text-base sm:text-xl md:text-2xl text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   I'm Sachin Gupta, a B.Tech Computer Science student with a passion for building innovative solutions. I specialize in full-stack development, AI integration, and creating scalable applications that solve real-world problems. Always learning, always building.
                 </p>
                 
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
                   {['Full-Stack Development', 'AI Integration', 'Scalable Systems', 'Innovation'].map((tag, index) => (
                     <span
                       key={tag}
-                      className="px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full text-slate-300 text-sm shadow-lg hover:border-blue-500/50 hover:bg-white/10 hover:backdrop-blur-2xl transition-all duration-300"
+                      className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full text-slate-300 text-xs sm:text-sm shadow-lg hover:border-blue-500/50 hover:bg-white/10 hover:backdrop-blur-2xl transition-all duration-300"
                       style={{ animationDelay: `${400 + index * 100}ms` }}
                     >
                       {tag}
@@ -99,52 +99,52 @@ export default function Hero() {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start animate-slide-up delay-500">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start animate-slide-up delay-500">
                 <a
                   href="#contact"
-                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-2xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
+                  className="group flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-2xl font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
                 >
                   <span>Let's Work Together</span>
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </a>
                 
-                <div className="flex gap-4">
+                <div className="flex gap-3 sm:gap-4 justify-center">
                 <a
                   href="https://www.linkedin.com/in/sachingupta9381"
                   target="_blank"
                   rel="noopener noreferrer"
-                    className="group p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-blue-500/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
+                    className="group p-3 sm:p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-blue-500/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
                 >
-                    <Linkedin size={24} className="text-slate-300 group-hover:text-blue-400" />
+                    <Linkedin size={20} className="sm:w-6 sm:h-6 text-slate-300 group-hover:text-blue-400" />
                 </a>
                 <a
                   href="https://github.com/SachinGupta93"
                   target="_blank"
                   rel="noopener noreferrer"
-                    className="group p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-slate-400/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
+                    className="group p-3 sm:p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-slate-400/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
                   >
-                    <Github size={24} className="text-slate-300 group-hover:text-white" />
+                    <Github size={20} className="sm:w-6 sm:h-6 text-slate-300 group-hover:text-white" />
                   </a>
                   <a
                     href="/assets/resume.pdf" 
                     download="Sachin_Gupta_Resume.pdf"
-                    className="group p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-emerald-500/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
+                    className="group p-3 sm:p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-emerald-500/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
                     title="Download Resume"
                   >
-                    <Download size={24} className="text-slate-300 group-hover:text-emerald-400" />
+                    <Download size={20} className="sm:w-6 sm:h-6 text-slate-300 group-hover:text-emerald-400" />
                   </a>
               </div>
               </div>
             </div>
 
             {/* Right Content - Enhanced Visual */}
-            <div className="flex justify-center lg:justify-end animate-fade-in delay-300">
+            <div className="hidden lg:flex justify-center lg:justify-end animate-fade-in delay-300 mt-8 lg:mt-0">
               <div className="relative group">
                 {/* Outer Glow Ring */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
                 
                 {/* Main Visual Container */}
-                <div className="relative w-80 h-80 md:w-96 md:h-96 bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl group-hover:border-blue-500/50 transition-all duration-500">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl group-hover:border-blue-500/50 transition-all duration-500">
                   
                   {/* Animated Grid Pattern */}
                   <div className="absolute inset-0 opacity-5">
@@ -164,7 +164,7 @@ export default function Hero() {
                     <div className="text-center space-y-8">
                       {/* Profile Image */}
                       <div className="relative mx-auto">
-                        <div className="w-48 h-48 bg-white/10 backdrop-blur-xl rounded-full flex items-center justify-center border-4 border-white/20 group-hover:border-blue-500/50 transition-all duration-500 shadow-2xl overflow-hidden">
+                        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-white/10 backdrop-blur-xl rounded-full flex items-center justify-center border-4 border-white/20 group-hover:border-blue-500/50 transition-all duration-500 shadow-2xl overflow-hidden">
                           <img 
                             src="/assets/profile.jpg" 
                             alt="Sachin Gupta" 
@@ -174,23 +174,23 @@ export default function Hero() {
                               e.currentTarget.style.display = 'none';
                               const parent = e.currentTarget.parentElement;
                               if (parent) {
-                                parent.innerHTML = '<span class="text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">SG</span>';
+                                parent.innerHTML = '<span class="text-6xl sm:text-7xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">SG</span>';
                               }
                             }}
                           />
                         </div>
                         
                         {/* Orbiting Elements */}
-                        <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-400 rounded-full animate-bounce-slow"></div>
-                        <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-emerald-400 rounded-full animate-bounce-slow delay-1000"></div>
-                        <div className="absolute top-1/2 -left-6 w-4 h-4 bg-purple-400 rounded-full animate-bounce-slow delay-500"></div>
+                        <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-blue-400 rounded-full animate-bounce-slow"></div>
+                        <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 w-5 h-5 sm:w-6 sm:h-6 bg-emerald-400 rounded-full animate-bounce-slow delay-1000"></div>
+                        <div className="absolute top-1/2 -left-4 sm:-left-6 w-3 h-3 sm:w-4 sm:h-4 bg-purple-400 rounded-full animate-bounce-slow delay-500"></div>
                       </div>
                       
                       {/* Status Indicators */}
                       <div className="space-y-3">
                         <div className="flex items-center justify-center gap-2">
                           <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                          <span className="text-emerald-400 text-sm font-medium">Available for opportunities</span>
+                          <span className="text-emerald-400 text-xs sm:text-sm font-medium">Available for opportunities</span>
                         </div>
                         <div className="flex justify-center gap-2">
                           <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
