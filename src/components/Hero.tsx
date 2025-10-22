@@ -126,7 +126,7 @@ export default function Hero() {
                     <Github size={20} className="sm:w-6 sm:h-6 text-slate-300 group-hover:text-white" />
                   </a>
                   <a
-                    href="/assets/resume.pdf" 
+                    href="/assets/Sachin_Gupta_Resume.pdf" 
                     download="Sachin_Gupta_Resume.pdf"
                     className="group p-3 sm:p-4 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:backdrop-blur-2xl border border-white/10 hover:border-emerald-500/50 rounded-xl transition-all duration-300 hover:scale-110 shadow-lg"
                     title="Download Resume"
