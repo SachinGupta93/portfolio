@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Github, Linkedin, Globe, MessageCircle, Clock, CheckCircle, Zap } from 'lucide-react';
+import { Mail, MapPin, Phone, Github, Linkedin, Globe, MessageCircle, Clock, CheckCircle, Zap, Instagram } from 'lucide-react';
 
 export default function Contact() {
   const contactInfo = [
@@ -49,12 +49,12 @@ export default function Contact() {
       hoverColor: 'hover:bg-slate-700'
     },
     {
-      icon: Globe,
-      href: 'https://github.com/SachinGupta93',
-      label: 'Portfolio',
-      color: 'text-emerald-400',
-      bgColor: 'bg-emerald-500/10',
-      hoverColor: 'hover:bg-emerald-500/20'
+      icon: Instagram,
+      href: 'https://www.instagram.com/sachin8247gupta?utm_source=qr&igsh=MXVwcTI4eDQxNGhhMg==',
+      label: 'Instagram',
+      color: 'text-pink-400',
+      bgColor: 'bg-pink-500/10',
+      hoverColor: 'hover:bg-pink-500/20'
     }
   ];
 
