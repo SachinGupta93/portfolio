@@ -5,227 +5,146 @@ export default function Skills() {
     {
       title: 'Machine Learning & AI',
       icon: Brain,
-      skills: [
-        'TensorFlow',
-        'Scikit-learn',
-        'PyTorch',
-        'ML Algorithms',
-        'Neural Networks'
-      ],
-      color: 'text-purple-400',
-      bgColor: 'bg-purple-500/10',
-      borderColor: 'border-purple-500/50',
-      gradient: 'from-purple-500/20 to-pink-500/20'
+      skills: ['TensorFlow', 'Scikit-learn', 'PyTorch', 'ML Algorithms', 'Neural Networks'],
+      color: '#A855F7'
     },
     {
       title: 'Backend Development',
       icon: Server,
-      skills: [
-        'Node.js',
-        'Python Flask',
-        'Express.js',
-        'RESTful APIs',
-        'Firebase'
-      ],
-      color: 'text-blue-400',
-      bgColor: 'bg-blue-500/10',
-      borderColor: 'border-blue-500/50',
-      gradient: 'from-blue-500/20 to-cyan-500/20'
+      skills: ['Node.js', 'Python Flask', 'Express.js', 'RESTful APIs', 'Firebase'],
+      color: '#00F5FF'
     },
     {
       title: 'Frontend Development',
       icon: Monitor,
-      skills: [
-        'React.js',
-        'TypeScript',
-        'JavaScript',
-        'HTML/CSS',
-        'Tailwind CSS'
-      ],
-      color: 'text-cyan-400',
-      bgColor: 'bg-cyan-500/10',
-      borderColor: 'border-cyan-500/50',
-      gradient: 'from-cyan-500/20 to-blue-500/20'
+      skills: ['React.js', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'],
+      color: '#FF3CAC'
     },
     {
       title: 'Database Management',
       icon: Database,
-      skills: [
-        'MongoDB',
-        'PostgreSQL',
-        'Firebase',
-        'SQL',
-        'NoSQL'
-      ],
-      color: 'text-emerald-400',
-      bgColor: 'bg-emerald-500/10',
-      borderColor: 'border-emerald-500/50',
-      gradient: 'from-emerald-500/20 to-teal-500/20'
+      skills: ['MongoDB', 'PostgreSQL', 'Firebase', 'SQL', 'NoSQL'],
+      color: '#00FF88'
     },
     {
       title: 'Cloud Computing',
       icon: Cloud,
-      skills: [
-        'Google Cloud',
-        'Firebase Hosting',
-        'Cloud Functions',
-        'Docker'
-      ],
-      color: 'text-orange-400',
-      bgColor: 'bg-orange-500/10',
-      borderColor: 'border-orange-500/50',
-      gradient: 'from-orange-500/20 to-red-500/20'
+      skills: ['Google Cloud', 'Firebase Hosting', 'Cloud Functions', 'Docker'],
+      color: '#FF8A00'
     },
     {
       title: 'API Development',
       icon: Code,
-      skills: [
-        'REST APIs',
-        'GraphQL',
-        'API Integration',
-        'Webhook Handling',
-        'Authentication'
-      ],
-      color: 'text-yellow-400',
-      bgColor: 'bg-yellow-500/10',
-      borderColor: 'border-yellow-500/50',
-      gradient: 'from-yellow-500/20 to-orange-500/20'
+      skills: ['REST APIs', 'GraphQL', 'API Integration', 'Authentication'],
+      color: '#00F5FF'
     },
     {
       title: 'Problem Solving',
       icon: Lightbulb,
-      skills: [
-        'Algorithm Design',
-        'System Design',
-        'Debugging',
-        'Optimization'
-      ],
-      color: 'text-pink-400',
-      bgColor: 'bg-pink-500/10',
-      borderColor: 'border-pink-500/50',
-      gradient: 'from-pink-500/20 to-purple-500/20'
+      skills: ['Algorithm Design', 'System Design', 'Debugging', 'Optimization'],
+      color: '#A855F7'
     },
     {
       title: 'Leadership',
       icon: Users,
-      skills: [
-        'Team Management',
-        'Mentoring',
-        'Project Planning',
-        'Workshop Organization',
-        'Technical Leadership'
-      ],
-      color: 'text-red-400',
-      bgColor: 'bg-red-500/10',
-      borderColor: 'border-red-500/50',
-      gradient: 'from-red-500/20 to-pink-500/20'
+      skills: ['Team Management', 'Mentoring', 'Project Planning', 'Workshops'],
+      color: '#FF3CAC'
     },
     {
-      title: 'Team Collaboration',
+      title: 'Collaboration',
       icon: MessageSquare,
-      skills: [
-        'Git/GitHub',
-        'Code Review',
-        'Documentation',
-        'Communication'
-      ],
-      color: 'text-teal-400',
-      bgColor: 'bg-teal-500/10',
-      borderColor: 'border-teal-500/50',
-      gradient: 'from-teal-500/20 to-emerald-500/20'
+      skills: ['Git/GitHub', 'Code Review', 'Documentation', 'Communication'],
+      color: '#00FF88'
     }
   ];
 
   const skillStats = [
-    { label: 'Technologies Used', value: '20+', icon: Award, color: 'text-blue-400' },
-    { label: 'Years Experience', value: '2+', icon: TrendingUp, color: 'text-emerald-400' },
-    { label: 'Projects Completed', value: '10+', icon: Code, color: 'text-purple-400' },
-    { label: 'Team Members Led', value: '5+', icon: Users, color: 'text-orange-400' }
+    { label: 'Technologies Used', value: '20+', icon: Award, color: '#00F5FF' },
+    { label: 'Years Experience', value: '2+', icon: TrendingUp, color: '#A855F7' },
+    { label: 'Projects Completed', value: '10+', icon: Code, color: '#FF3CAC' },
+    { label: 'Team Members Led', value: '5+', icon: Users, color: '#00FF88' }
   ];
 
   return (
-    <section id="skills" className="py-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
-      {/* Enhanced Background */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-blue-500/5 rounded-full blur-2xl animate-pulse delay-500"></div>
-      </div>
+    <section id="skills" className="py-32 relative overflow-hidden bg-carbon">
+      {/* Background Effects */}
+      <div className="absolute inset-0 gradient-mesh-dark"></div>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00F5FF]/20 to-transparent"></div>
+
+      {/* Gradient Orbs */}
+      <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-[#A855F7]/10 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-1/3 left-0 w-[300px] h-[300px] bg-[#00F5FF]/10 rounded-full blur-[100px]"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full text-purple-400 text-sm shadow-lg mb-6">
-            <Award size={16} />
-            <span>Skills & Expertise</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full backdrop-blur-xl mb-6">
+            <Award size={16} className="text-[#A855F7]" />
+            <span className="text-sm font-medium text-white/80">Skills & Expertise</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Technical
-            <span className="block bg-gradient-to-r from-purple-400 to-emerald-400 bg-clip-text text-transparent">
-              Arsenal
-            </span>
+            <span className="block text-gradient-purple">Arsenal</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            A comprehensive collection of technologies and skills that I've mastered through hands-on experience, 
-            continuous learning, and real-world project implementation.
+          <p className="text-xl text-white/50 max-w-3xl mx-auto leading-relaxed">
+            A comprehensive collection of technologies and skills mastered through hands-on experience
+            and real-world project implementation.
           </p>
         </div>
 
         {/* Skills Stats */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {skillStats.map((stat, index) => {
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {skillStats.map((stat) => {
               const Icon = stat.icon;
               return (
-                <div
-                  key={stat.label}
-                  className="group bg-white/5 backdrop-blur-2xl rounded-2xl p-6 shadow-xl border border-white/10 hover:border-purple-500/30 hover:bg-white/10 hover:backdrop-blur-3xl transition-all duration-300 hover:scale-105"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="p-2 bg-white/10 backdrop-blur-xl rounded-lg group-hover:scale-110 transition-transform duration-300 border border-white/20">
-                      <Icon className={stat.color} size={20} />
-                    </div>
-                    <div className="text-3xl font-bold text-white">{stat.value}</div>
+                <div key={stat.label} className="card-dark p-6 text-center hover-lift group">
+                  <div
+                    className="icon-box-sm mx-auto mb-4 group-hover:scale-110 transition-transform"
+                    style={{ borderColor: `${stat.color}30`, background: `${stat.color}15` }}
+                  >
+                    <Icon size={20} style={{ color: stat.color }} />
                   </div>
-                  <p className="text-slate-400 text-sm">{stat.label}</p>
+                  <div className="number-xl mb-2" style={{ color: stat.color }}>{stat.value}</div>
+                  <p className="text-white/50 text-sm">{stat.label}</p>
                 </div>
               );
             })}
           </div>
         </div>
 
-        {/* Skills Grid */}
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Skills Grid - Bento Box Style */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
+
             return (
               <div
                 key={index}
-                className="group relative"
+                className="card-dark p-8 hover-lift group"
+                style={{ borderColor: `${category.color}15` }}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                <div className={`relative bg-white/5 backdrop-blur-2xl rounded-3xl p-8 shadow-2xl border border-white/10 hover:scale-105 transition-all duration-500`}>
-                  {/* Category Header */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="p-3 bg-white/10 backdrop-blur-xl rounded-xl group-hover:scale-110 transition-transform duration-300 border border-white/20">
-                      <Icon className={category.color} size={28} />
-                    </div>
-                    <h3 className={`text-2xl font-bold ${category.color}`}>
-                      {category.title}
-                    </h3>
+                {/* Category Header */}
+                <div className="flex items-center gap-4 mb-6">
+                  <div
+                    className="icon-box group-hover:scale-110 transition-transform"
+                    style={{ borderColor: `${category.color}30`, background: `${category.color}15` }}
+                  >
+                    <Icon size={24} style={{ color: category.color }} />
                   </div>
+                  <h3 className="text-lg font-bold text-white">{category.title}</h3>
+                </div>
 
-                  {/* Skills List */}
-                  <div className="flex flex-wrap gap-3">
-                    {category.skills.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="px-4 py-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full text-slate-300 text-sm hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 shadow-lg"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                {/* Skills List */}
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className="px-4 py-2 bg-white/5 text-white/60 text-sm rounded-full border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-all cursor-default"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             );
@@ -234,24 +153,21 @@ export default function Skills() {
 
         {/* Bottom Section - Learning Philosophy */}
         <div className="text-center mt-20">
-          <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-emerald-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative max-w-4xl mx-auto bg-white/5 backdrop-blur-2xl rounded-3xl p-12 shadow-2xl border border-white/10 hover:bg-white/10 hover:backdrop-blur-3xl transition-all duration-500">
-              <div className="flex justify-center mb-6">
-                <div className="p-4 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20">
-                  <Zap className="text-purple-400" size={40} />
-                </div>
+          <div className="relative max-w-4xl mx-auto p-12 md:p-16 rounded-[40px] overflow-hidden">
+            {/* Background */}
+            <div className="absolute inset-0 gradient-purple opacity-20"></div>
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-xl"></div>
+            <div className="absolute inset-0 border border-[#A855F7]/30 rounded-[40px]"></div>
+
+            <div className="relative z-10">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-[#A855F7]/20 border border-[#A855F7]/30 flex items-center justify-center">
+                <Zap className="text-[#A855F7]" size={40} />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-6">Continuous Learning</h3>
-              <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                Technology evolves rapidly, and so do I. I'm committed to staying at the forefront of innovation, 
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Continuous Learning</h3>
+              <p className="text-xl text-white/70 leading-relaxed max-w-2xl mx-auto">
+                Technology evolves rapidly, and so do I. I'm committed to staying at the forefront of innovation,
                 constantly learning new technologies and methodologies to deliver cutting-edge solutions.
               </p>
-              <div className="flex justify-center gap-4">
-                <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
-                <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-300"></div>
-                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse delay-700"></div>
-              </div>
             </div>
           </div>
         </div>
