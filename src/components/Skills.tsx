@@ -46,8 +46,8 @@ export default function Skills() {
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#111111] to-transparent z-10"></div>
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#111111] to-transparent z-10"></div>
 
-          <div className="flex gap-4 animate-marquee">
-            {[...allSkills, ...allSkills].map((skill, i) => (
+          <div className="flex gap-4 animate-marquee w-max">
+            {[...allSkills, ...allSkills, ...allSkills, ...allSkills].map((skill, i) => (
               <span
                 key={i}
                 className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-white/60 whitespace-nowrap text-sm font-medium hover:bg-white/10 hover:text-white transition-colors"
