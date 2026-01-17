@@ -23,8 +23,7 @@ export default function Experience() {
       description: 'Conducted research on emerging tech, built prototypes, and collaborated on development projects.',
       highlights: ['Research & Dev', 'Technical Publications', 'Team Leadership'],
       technologies: ['Research', 'Prototyping', 'Web Dev', 'Collaboration'],
-      color: '#A855F7',
-      link: 'https://www.linkedin.com/company/ieee-vbit-sb/'
+      color: '#A855F7'
     }
   ];
 
