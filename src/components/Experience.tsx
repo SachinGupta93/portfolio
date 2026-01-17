@@ -11,7 +11,8 @@ export default function Experience() {
       description: 'Built serverless medication management platform with TypeScript, React, and AI integration.',
       highlights: ['Serverless Architecture', 'AI Integration', 'Scalable APIs'],
       technologies: ['TypeScript', 'React.js', 'ML/AI', 'Firebase'],
-      color: '#00F5FF'
+      color: '#00F5FF',
+      link: 'https://medtrack.co.in/'
     },
     {
       title: 'IEEE Member',
@@ -22,7 +23,8 @@ export default function Experience() {
       description: 'Conducted research on emerging tech, built prototypes, and collaborated on development projects.',
       highlights: ['Research & Dev', 'Technical Publications', 'Team Leadership'],
       technologies: ['Research', 'Prototyping', 'Web Dev', 'Collaboration'],
-      color: '#A855F7'
+      color: '#A855F7',
+      link: 'https://www.linkedin.com/company/ieee-vbit-sb/'
     }
   ];
 
@@ -122,12 +124,17 @@ export default function Experience() {
                           <span key={i} className="tag text-xs">{tech}</span>
                         ))}
                       </div>
-                      <div
-                        className="w-10 h-10 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                        style={{ backgroundColor: `${exp.color}15`, border: `1px solid ${exp.color}30` }}
-                      >
-                        <ArrowUpRight size={18} style={{ color: exp.color }} />
-                      </div>
+                      {exp.company === 'MedTrack' && (
+                        <a
+                          href={exp.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                          style={{ backgroundColor: `${exp.color}15`, border: `1px solid ${exp.color}30` }}
+                        >
+                          <ArrowUpRight size={18} style={{ color: exp.color }} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
