@@ -2,11 +2,11 @@ import { Brain, Server, Monitor, Database, Cloud, Code, Users, Lightbulb, Messag
 
 export default function Skills() {
   const skillCategories = [
-    { title: 'ML & AI', icon: Brain, skills: ['TensorFlow', 'Scikit-learn', 'PyTorch', 'Neural Networks'], color: '#A855F7' },
-    { title: 'Backend', icon: Server, skills: ['Node.js', 'Python Flask', 'Express.js', 'REST APIs'], color: '#00F5FF' },
+    { title: 'ML & AI', icon: Brain, skills: ['TensorFlow', 'Scikit-learn', 'PyTorch'], color: '#A855F7' },
+    { title: 'Backend', icon: Server, skills: ['Node.js', 'Python Flask', 'REST APIs'], color: '#00F5FF' },
     { title: 'Frontend', icon: Monitor, skills: ['React.js', 'TypeScript', 'Tailwind CSS'], color: '#FF3CAC' },
-    { title: 'Database', icon: Database, skills: ['MongoDB', 'PostgreSQL', 'Firebase'], color: '#00FF88' },
-    { title: 'Cloud', icon: Cloud, skills: ['Google Cloud', 'Firebase', 'Docker'], color: '#FF8A00' },
+    { title: 'Database', icon: Database, skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'Firebase'], color: '#00FF88' },
+    { title: 'Cloud & DevOps', icon: Cloud, skills: ['Google Cloud', 'Firebase', 'Docker'], color: '#FF8A00' },
     { title: 'API Dev', icon: Code, skills: ['REST', 'GraphQL', 'Authentication'], color: '#00F5FF' },
   ];
 
@@ -18,7 +18,7 @@ export default function Skills() {
 
   // All skills for the animated marquee
   const allSkills = [
-    'TensorFlow', 'React.js', 'Node.js', 'Python', 'TypeScript', 'MongoDB', 'PostgreSQL',
+    'TensorFlow', 'React.js', 'Node.js', 'Python', 'TypeScript', 'MySQL', 'MongoDB', 'PostgreSQL',
     'Docker', 'Flask', 'Firebase', 'Google Cloud', 'Scikit-learn', 'PyTorch', 'GraphQL',
     'Express.js', 'Tailwind CSS', 'JavaScript', 'HTML/CSS', 'Git', 'REST APIs'
   ];

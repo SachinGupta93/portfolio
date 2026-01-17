@@ -47,21 +47,14 @@ export default function Certifications() {
     }
   ];
 
-  // SIH 2025 Finalist - Featured Achievement
-  const featuredAchievement = {
-    title: 'Smart India Hackathon 2025',
-    badge: 'FINALIST',
-    description: 'Selected among top teams nationwide in India\'s largest hackathon organized by Government of India',
-    color: '#FFD700', // Gold color for prestige
-    year: '2025'
-  };
+
 
   const hackathons = [
-    { title: 'SIH 2025 Finalist', org: 'Govt. of India', date: '2025', featured: true },
-    { title: 'UDHGAM 24HR Hackathon', org: 'Woxsen University', date: 'Feb 2025', featured: false },
-    { title: 'IEEE Xtreme 18.0', org: 'IEEE', date: 'Oct 2024', featured: false },
-    { title: 'IGNIS XR-AI Workshop', org: 'VBIT', date: 'Nov 2024', featured: false },
-    { title: 'Agentic AI Hackathon', org: 'IBC Media', date: 'Oct 2025', featured: false }
+    { title: 'SIH 2025 Finalist', org: 'Govt. of India', date: '2025', featured: true, link: 'https://drive.google.com/file/d/1rw4YZFWewON1FXSBHcesLWWwd9lUAWR6/view?usp=sharing' },
+    { title: 'UDHGAM 24HR Hackathon', org: 'Woxsen University', date: 'Feb 2025', featured: false, link: 'https://drive.google.com/file/d/1kJsWdpaU4vHUI2y57Nu7JOpNU_h7hwhD/view?usp=sharing' },
+    { title: 'IEEE Xtreme 18.0', org: 'IEEE', date: 'Oct 2024', featured: false, link: 'https://drive.google.com/file/d/11XRybvWWRNB6srKimwgVzDHmzXYGEZY2/view?usp=sharing' },
+    { title: 'IGNIS XR-AI Workshop', org: 'VBIT', date: 'Nov 2024', featured: false, link: 'https://drive.google.com/file/d/1zJIZNX45ZnXqOoCmmZ7PoBMO96YQJtt9/view?usp=sharing' },
+    { title: 'Agentic AI Hackathon', org: 'IBC Media', date: 'Oct 2025', featured: false, link: 'https://drive.google.com/file/d/1XkwDRm8TDiHyVolvBfe5ijCy1653P61B/view?usp=sharing' }
   ];
 
   const nextSlide = () => setActiveIndex((prev) => (prev + 1) % certifications.length);
@@ -193,9 +186,12 @@ export default function Certifications() {
               Hackathons & Achievements
             </h4>
             {hackathons.map((hack, i) => (
-              <div
+              <a
                 key={i}
-                className={`card-dark p-5 hover-lift group flex items-center gap-4 ${hack.featured ? 'border-[#FFD700]/40 bg-[#FFD700]/5' : ''}`}
+                href={hack.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`card-dark p-5 hover-lift group flex items-center gap-4 ${hack.featured ? 'border-[#FFD700]/40 bg-[#FFD700]/5 ring-1 ring-[#FFD700]/20' : ''}`}
               >
                 <div
                   className={`w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform ${hack.featured
@@ -210,14 +206,15 @@ export default function Certifications() {
                   <div className="flex items-center gap-2">
                     <h5 className={`font-semibold text-sm ${hack.featured ? 'text-[#FFD700]' : 'text-white'}`}>{hack.title}</h5>
                     {hack.featured && (
-                      <span className="px-2 py-0.5 text-[10px] font-bold bg-[#FFD700] text-black rounded-full animate-pulse">
+                      <span className="px-2 py-0.5 text-[10px] font-bold bg-[#FFD700] text-black rounded-full animate-pulse shadow-[0_0_10px_rgba(255,215,0,0.5)]">
                         FINALIST
                       </span>
                     )}
                   </div>
                   <p className="text-xs text-white/40">{hack.org} • {hack.date}</p>
                 </div>
-              </div>
+                <ArrowUpRight size={16} className={`text-white/20 group-hover:text-white/60 transition-colors ${hack.featured ? 'text-[#FFD700]/50 group-hover:text-[#FFD700]' : ''}`} />
+              </a>
             ))}
           </div>
         </div>

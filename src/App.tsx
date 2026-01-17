@@ -1,12 +1,21 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
+
+// Lazy load non-critical sections
+const About = lazy(() => import('./components/About'));
+const Experience = lazy(() => import('./components/Experience'));
+const Projects = lazy(() => import('./components/Projects'));
+const Skills = lazy(() => import('./components/Skills'));
+const Certifications = lazy(() => import('./components/Certifications'));
+const Contact = lazy(() => import('./components/Contact'));
+
+// Loading Fallback Component
+const PageLoader = () => (
+  <div className="flex items-center justify-center py-20">
+    <div className="w-10 h-10 border-4 border-[#00F5FF] border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,13 +39,18 @@ function App() {
     if (!dot || !outline) return;
 
     const moveCursor = (e: MouseEvent) => {
-      dot.style.left = `${e.clientX}px`;
-      dot.style.top = `${e.clientY}px`;
+      // Use requestAnimationFrame for smoother performance
+      requestAnimationFrame(() => {
+        dot.style.left = `${e.clientX}px`;
+        dot.style.top = `${e.clientY}px`;
+      });
 
-      // Smooth follow for outline
+      // Smooth follow for outline with slight delay
       setTimeout(() => {
-        outline.style.left = `${e.clientX}px`;
-        outline.style.top = `${e.clientY}px`;
+        requestAnimationFrame(() => {
+          outline.style.left = `${e.clientX}px`;
+          outline.style.top = `${e.clientY}px`;
+        });
       }, 50);
     };
 
@@ -75,13 +89,18 @@ function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('revealed');
+          // Optional: Stop observing once revealed to save resources
+          // observer.unobserve(entry.target); 
         }
       });
     }, observerOptions);
 
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-      observer.observe(el);
-    });
+    // Delay observation to ensure DOM elements are ready after lazy load
+    setTimeout(() => {
+      document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+      });
+    }, 100);
 
     return () => observer.disconnect();
   }, []);
@@ -102,12 +121,15 @@ function App() {
       <div className="relative z-10">
         <Navbar scrolled={scrolled} />
         <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Certifications />
-        <Contact />
+
+        <Suspense fallback={<PageLoader />}>
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Certifications />
+          <Contact />
+        </Suspense>
       </div>
     </div>
   );

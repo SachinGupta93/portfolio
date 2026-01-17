@@ -501,6 +501,7 @@
         rgba(255, 255, 255, 0.05),
         transparent);
     transition: left 0.5s ease;
+    pointer-events: none;
   }
 
   .card-shimmer:hover::before {
@@ -528,6 +529,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     animation: gradientMove 3s ease infinite;
+    pointer-events: none;
   }
 
   .glow-border:hover::after {
